@@ -3,6 +3,9 @@
   --secondary-color: #4d5ae5;
   --selected-color: #f4f4fd;
   --accented-color:#fff;
+  --lucid-color:#e7e9fc;
+  --filler-color:#434455;
+  --change-color:#404bbf;
 }
 
 body {
@@ -61,11 +64,10 @@ body {
 
 /*  =================== contacts ======================= */
 .contacts-link {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color:var(--filler-color);
 }
 
 .contacts-link:hover,
@@ -90,6 +92,7 @@ body {
 }
 
 .hero-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -105,7 +108,7 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  background-color:var(--change-color);
   transition: all 0.35s ease;
 }
 
@@ -132,7 +135,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color:var(--filler-color);
 }
 
 /* ======================= Our Team ======================================= */
@@ -148,7 +151,6 @@ body {
 
 .logo-footer {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -181,14 +183,24 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
+  color:var(--lucid-color);
 }
 
 /* ======================================== portfolio style ============================ */
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
 .portfolio-item-btn {
+  font-family: inherit;
   padding: 12px 24px;
   background-color: var(--selected-color);
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--lucid-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
